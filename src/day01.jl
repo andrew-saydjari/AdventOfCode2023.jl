@@ -1,6 +1,6 @@
 import Pkg
-Pkg.activate("/uufs/chpc.utah.edu/common/home/u6039752/scratch/julia_env/adventOfCode_193")
-basedir = "/uufs/chpc.utah.edu/common/home/sdss42/sdsswork/users/u6039752-1/software/AdventOfCode2023.jl/"
+Pkg.activate(".")
+basedir = "./"
 using BenchmarkTools
 using ReadableRegex
 
