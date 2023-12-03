@@ -1,6 +1,7 @@
 import Pkg
 Pkg.activate(".")
 basedir = "./"
+Pkg.add("BenchmarkTools")
 using BenchmarkTools
 Pkg.add("ReadableRegex")
 using ReadableRegex
