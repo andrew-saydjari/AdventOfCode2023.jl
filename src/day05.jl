@@ -84,7 +84,7 @@ map_lsts = get_maps(input_test)
 dest_start, source_start, rlen = parse.(Int,split(map_lsts[1][1]," "))
 sourcetup = (source_start,rlen)
 desttup = (dest_start,rlen)
-out_tup, offset_tup = transform_tuple(input_tup[1],maptup,desttup)
+out_tup, offset_tup = transform_tuple(input_tup[1],sourcetup,desttup)
 
 function transform_tuple(intup,sourcetup,desttup)
     out_lst = []
@@ -93,6 +93,7 @@ function transform_tuple(intup,sourcetup,desttup)
         low_offset = low_end - sourcetup[1]
         high_end = minimum([sourcetup[1]+sourcetup[2]-1,intup[1]+intup[2]-1])
         high_offset = high_end - (sourcetup[1]+sourcetup[2]-1)
+        println((high_end,sourcetup[1]+sourcetup[2]-1,high_offset))
         return (desttup[1]+low_offset, desttup[2]+high_offset)
     else
         return intup
