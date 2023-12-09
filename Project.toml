@@ -1,3 +1,6 @@
 [deps]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+CircularArrays = "7a955b69-7140-5f4e-a0ed-f168c5e2e749"
+FreqTables = "da1fdf0e-e0ff-5433-a45f-9bb5ff651cb1"
+ProfileSVG = "132c30aa-f267-4189-9183-c8a63c7e05e6"
 ReadableRegex = "cbbcb084-453d-4c4c-b292-e315607ba6a4"
